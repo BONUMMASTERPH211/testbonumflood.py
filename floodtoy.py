@@ -13,7 +13,7 @@ emails = ["outlook.com", "gmail.com", "yahoo.com", "hotmail.com", "aol.com", "ic
 random.seed = (os.urandom(1024))
 
 # This is the URL you want to flood. Should be a login page
-url = https://ded4950.inmotionhosting.com/~droneblo/get.php?do=Ly9uZXRmbGl4Lz9pPSZhbXA7aT1VUFBaNw==&lWZWv
+url = 'https://ded4950.inmotionhosting.com/~droneblo/get.php?do=Ly9uZXRmbGl4Lz9pPSZhbXA7aT1VUFBaNw==&lWZWv'
 
 names = json.loads(open('names.json').read())
 
@@ -31,7 +31,7 @@ for name in names:
 	user = random.choice(uore)
 
 	r = requests.post(url, allow_redirects=False, data={
-		'username': user,
+		'email, username': user,
 		'password': password,
 	})
 
